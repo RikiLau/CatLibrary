@@ -48,7 +48,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     // 屏幕适配
-    implementation 'com.github.RikiLau:ScreenAdapter:Tag'
+    implementation 'com.github.RikiLau.ScreenAdapter:screenAdapter:v2.2'
 
     // jetpack
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
@@ -58,6 +58,7 @@ dependencies {
 
     // okhttp
     implementation(platform("com.squareup.okhttp3:okhttp-bom:4.9.1"))
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.1"
 
     // retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'

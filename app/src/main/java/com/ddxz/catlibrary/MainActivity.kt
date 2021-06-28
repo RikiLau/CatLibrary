@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.ddxz.catlibrary.base.BaseActivity
 import com.ddxz.catlibrary.databinding.ActivityMainBinding
 import com.ddxz.catlibrary.util.logD
+import com.ddxz.screenadapter.ScreenUtils
 
 class MainActivity : BaseActivity() {
 
