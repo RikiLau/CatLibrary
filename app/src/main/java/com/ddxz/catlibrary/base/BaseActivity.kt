@@ -4,5 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 open class BaseActivity: AppCompatActivity() {
 
-    val TAG: String = javaClass.simpleName
+    companion object {
+        val TAG: String by lazy { BaseActivity::class.java.simpleName }
+    }
 }

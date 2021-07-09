@@ -1,5 +1,8 @@
 package com.ddxz.catlibrary.util
 
+import android.content.Context
+import android.content.res.Resources
+import android.util.DisplayMetrics
 import android.util.Log
 
 private const val TAG = "SystemFun"
@@ -20,4 +23,10 @@ fun printExceptionInfo(pEx: Exception) {
             """.trimIndent()
     }
     Log.w(TAG, exStr)
+}
+
+fun getDisplayWidth (context: Context): Int {
+    val resources: Resources = context.resources
+    val dm: DisplayMetrics = resources.displayMetrics
+    return dm.widthPixels
 }
